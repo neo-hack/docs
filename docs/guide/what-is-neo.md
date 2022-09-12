@@ -4,7 +4,7 @@
 
 ## Movitation
 
-Lots of side projects build on top of lots of tools, such as `webpack`, `rollup`, `eslint`, `Next.js` etc..., and you may choose `TypeScript` instead of `JavaScript` to develop, you may also need `changeset` and `Github Workflows` to publish package. At the begaining, it's really hard to combine those tools to create a minial starter repo.
+Side projects build on top of lots of tools, such as `webpack`, `rollup`, `eslint`, `Next.js` etc..., and you may choose `TypeScript` instead of `JavaScript` to develop, you may also need `changeset` and `Github Workflows` to publish package. At the begaining, it's really hard to combine those tools to create a minial starter repo.
 
 If you meet a new tool, and you really need this one in your side project, maybe `vite`, maybe `electron`. Or even more complicated, you want to try `vite + electron` to create a cross platform application, but official only provide basic template.
 

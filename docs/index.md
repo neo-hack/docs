@@ -3,8 +3,8 @@ layout: home
 
 hero:
   name: NEO
-  text: Local & Fast repo template manager.
-  tagline: neo use pnpm to manage your template, create hack project as quick as possible.
+  text: Local & Fast starter template manager.
+  tagline: Use pnpm to manage your template, create hack project as quick as possible.
   image:
     src: /assets/logo.png
     alt: NEO
