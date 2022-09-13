@@ -20,6 +20,10 @@ export default defineConfig({
               text: 'What is neo',
               link: '/guide/what-is-neo'
             },
+            {
+              text: 'Get started',
+              link: '/guide/get-started'
+            },
           ],
         },
       ],
