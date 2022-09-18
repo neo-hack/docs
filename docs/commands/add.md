@@ -28,7 +28,7 @@ version range is not supported
 ### `--preset`
 
 :::info
-Recommanded read [preset](usage/preset) before use option `--preset` 
+Recommanded read [preset](guide/manage-with-preset) before use option `--preset` 
 :::
 
 Add collection of config files and templates into local store. 

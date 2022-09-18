@@ -31,7 +31,7 @@ code .
 
 
 :::info
-`@aiou/react-template` is already cache in local store. At next time, neo prefer use local cached `@aiou/react-template` to create another side project.
+`@aiou/react-template` is already cache in local store. At next time, neo prefer use local cached to create another side project.
 :::
 
 ## Add starter template

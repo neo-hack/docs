@@ -24,6 +24,10 @@ export default defineConfig({
               text: 'Get started',
               link: '/guide/get-started'
             },
+            {
+              text: 'Manage with preset',
+              link: '/guide/manage-with-preset'
+            },
           ],
         },
       ],
