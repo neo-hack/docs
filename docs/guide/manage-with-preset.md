@@ -50,3 +50,7 @@ neo add <preset-package> --preset
 neo will save templates listed in `<preset-package>` into local store. You can create side project from an interactive cli list.
 
 // TODO, create snapshot image
+
+## Build preset
+
+Checkout [Preset API](/configration/preset) for documentation about creating preset package.
