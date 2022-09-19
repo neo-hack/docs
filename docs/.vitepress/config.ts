@@ -10,6 +10,11 @@ export default defineConfig({
         link: '/guide/what-is-neo',
         activeMatch: '/guide',
       },
+      {
+        text: 'Configuration',
+        link: '/configuration/neorc',
+        activeMatch: '/configuration',
+      },
     ],
     sidebar: {
       '/guide/': [
