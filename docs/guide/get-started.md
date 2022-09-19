@@ -1,5 +1,7 @@
 # Get Started
 
+![get-started](/assets/get-started.gif)
+
 ## Overview
 
 This section will help your how to create and manage your template via `neo`.
@@ -34,7 +36,7 @@ code .
 `@aiou/react-template` is already cache in local store. At next time, neo prefer use local cached to create another side project.
 :::
 
-## Add starter template
+## Save starter template
 
 You can also add remote starter template, create new side project later
 

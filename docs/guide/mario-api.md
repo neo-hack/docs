@@ -197,6 +197,33 @@ By default, will be all files under `process.cwd()`, auto ignore `node_modules`.
 
 By default, will exit if any error happen.
 
+### Variables
+
+neo support access variable with `${{ variable }}`. Under neo context, mario generator will receive global variables, useful to replace package basic info.
+
+Example:
+
+```yaml
+jobs:
+  Replace template name:
+    name: Replace outdated
+    steps:
+      - name: Replace org
+      - uses: replace
+        with:
+          pairs:
+            - match: spring-catponents
+              replacement: ${{ inputs.user.name }}
+```
+
+#### `inputs.user`
+
+- Type: `{ name: string }` current user github info
+  
+### `inputs.project`
+
+- Type: `string` side project name
+
 ## Used as a libary
 
 Currently it already published as a npm package. Checkout [@aiou/mario](https://github.com/neo-hack/neo/tree/master/packages/mario) for documentation about using like it as a standalone libary

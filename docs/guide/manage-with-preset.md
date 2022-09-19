@@ -1,10 +1,10 @@
 # Manage with preset
 
+![manage-with-preset](/assets/manage-with-preset.gif)
+
 ## What is preset
 
 `preset` is collection of config files and templates list. It help you batch add list of templates into your local store.
-
-## Create `preset`
 
 `preset` is a normal npm package, you can publish preset package for share and download it from remote. Create you first preset with `neo create` in follow steps:
 
@@ -41,15 +41,13 @@ Make sure setup `index.json` at `package.json` main field:
 
 Now, you can publish it like normal npm package.
 
-## Install preset
+## Add preset
 
 ```sh
 neo add <preset-package> --preset
 ```
 
 neo will save templates listed in `<preset-package>` into local store. You can create side project from an interactive cli list.
-
-// TODO, create snapshot image
 
 ## Build preset
 

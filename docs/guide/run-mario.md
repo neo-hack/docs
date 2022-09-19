@@ -1,5 +1,7 @@
 # Run mario
 
+![run-mario](/assets/run-mario.gif)
+
 ## What is mario
 
 `mario`, or in other words `generator`. 
@@ -54,7 +56,13 @@ After run mario successfully, neo will auto delete `.neo` foleder.
 If template does not contain `.neo` folder, neo supports run `mario` generator standalone.
 
 ```sh
-neo run @aiou/geneartor-demo
+neo run @aiou/geneartor-aiou
+```
+
+Or, with local generator file.
+
+```sh
+neo run path/generator.yaml
 ```
 
 ## Build mario

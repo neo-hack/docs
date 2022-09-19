@@ -10,8 +10,6 @@ Command add used to save remote `npm package` or `git repo` template into local 
 |`neo add npm-package@version`|add specific version npm package template into local store|
 |`neo add git-repo-url`|add github repo template into local store|
 
-// TODO, add screenshot
-
 ## Supported template location
 
 ### install from npm

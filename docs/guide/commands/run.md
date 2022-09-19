@@ -13,7 +13,7 @@ Command run used to run mario generator. Before you use `neo`, recommanded go th
 By default `neo` load mario geneartor from npm package `main` field, e.g.
 
 ```sh
-neo run @aiou/generator-ci
+neo run @aiou/generator-aiou
 ```
 
 You also run mario geneartor defined by local yaml file, e.g.
