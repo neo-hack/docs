@@ -10,6 +10,8 @@ Command add used to save remote `npm package` or `git repo` template into local 
 |`neo add npm-package@version`|add specific version npm package template into local store|
 |`neo add git-repo-url`|add github repo template into local store|
 
+// TODO, add screenshot
+
 ## Supported template location
 
 ### install from npm
@@ -28,7 +30,7 @@ version range is not supported
 ### `--preset`
 
 :::info
-Recommanded read [preset](guide/manage-with-preset) before use option `--preset` 
+Recommanded go through [Manage with preset](/guide/manage-with-preset) before use option `--preset` 
 :::
 
-Add collection of config files and templates into local store. 
+By default, neo load `npm-package` as template, you can add collection of config files and templates into local store with option `--preset`. 

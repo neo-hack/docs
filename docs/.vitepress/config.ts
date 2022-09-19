@@ -35,6 +35,27 @@ export default defineConfig({
           ],
         },
         {
+          text: 'Commands',
+          items: [
+            {
+              text: 'neo add',
+              link: '/guide/commands/add'
+            },
+            {
+              text: 'neo create',
+              link: '/guide/commands/create'
+            },
+            {
+              text: 'neo list',
+              link: '/guide/commands/list'
+            },
+            {
+              text: 'neo run',
+              link: '/guide/commands/run'
+            },
+          ],
+        },
+        {
           text: 'APIs',
           items: [
             {
