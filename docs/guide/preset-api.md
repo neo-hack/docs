@@ -1,26 +1,30 @@
-# Presets
+# Preset API
 
-presets define collection of templates and configs. `neo add npm-package --presets` will add lots of templates and config files into localstore.
+presets define collection of templates and configs.
 
-## Usgae
+## Create a preset
 
-### create a preset package
+`preset` is a normal npm package, you can publish preset package for share and download it from remote. Create you first preset with `neo create` in follow steps:
 
-**Step1**
-
-create npm package
+Use `@aiou/preset-demo` as template:
 
 ```sh
-$ npm init
+neo create @aiou/preset-demo my-preset-app
 ```
 
-**Step2**
+A empty preset project structure is probably like this:
 
-(optional)create `assets` fold, add `ci.yaml`
+```sh
+.
+├── CHANGELOG.md
+├── README.md
+├── assets
+│   └── ci.yaml
+├── index.json
+└── package.json
+```
 
-**Step3**
-
-create `index.json` file, add follow content into current file.
+Add all awesome template and config files you need into `index.json` file 
 
 ```json
 {
@@ -32,24 +36,30 @@ create `index.json` file, add follow content into current file.
   ],
   "templates": [
     {
-      "name": "@aiou/ts-lib-template",
-      "pref": "@aiou/ts-lib-template"
-    },
-    {
-      "name": "electron-boilerplate",
-      "pref": "https://github.com/sindresorhus/electron-boilerplate"
-    },
-    {
-      "name": "ts-lib-template",
-      "pref": "https://github.com/egoist/ts-lib-starter"
+      "name": "@aiou/rollup-template"
     }
   ]
 }
 ```
 
-:::info
-makesure `index.json` included in `packages.json` files filed.
-:::
+Make sure setup `index.json` at `package.json` main field:
 
-## Format
+```json
+{
+  "main": "index.json"
+}
+```
 
+## Configuration
+
+### template
+
+- Type `{ name: string; perf: string }`
+
+By default, neo create project by `template.perf`. If `perf` not defined, use `template.name` as fallback.
+
+### config
+
+- Type `{ name: string; perf: string }`
+
+Define config file location by `config.perf`, identify config file by `config.name`.

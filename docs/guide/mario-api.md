@@ -24,7 +24,7 @@ jobs:
 
 Feel free to add more steps after `Add CI Scripts`, or more jobs `Setup Pkg`. `mario` will run jobs and steps sequential.
 
-## Actions
+## Built in Actions
 
 `mario` built in some common actions. Action receive params from property `with`. 
 
