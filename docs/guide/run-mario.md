@@ -2,15 +2,32 @@
 
 ## What is mario
 
-`mario`, or another name `generator`. 
+`mario`, or in other words `generator`. 
 
-Mario is simple manipulate system based on `gulp`, has similar systax with `github workflow`. It will make these work much easier. 
+Mario is simple manipulate system based on `gulp`, `mario` has similar syntax like `github workflow`.
 
-After create new side project from `npm` or `git` template, you may also need to apply some modifies, e.g. change package name, update origin git url.
+Sometimes, after create new side project from `npm` or `git` template, you may also need to apply some modifies, e.g. change package name, update origin git url etc...
 
-## Create a generator
+With `mario`, it will make these work much easier. Pack common modify actions into a `mario` geneartor, `mario` will repeat those actions. 
 
-create a empty `generator.yaml` file, this generator will add `ci:version` script into `package.json`
+## Add mario into template
+
+create `.neo` folder in template repo, `.neo` structure properly like this:
+
+```
+├── .neo
+│   └── .neorc.ts
+```
+
+Add `mario` package or local `generator` file in `.neo/.neorc` mario field.
+
+```json
+{
+  "mario": "<npm-package>|path/generator.yaml"
+}
+```
+
+A simple mario generator config could be like follow content:
 
 ```yaml
 jobs:
@@ -26,26 +43,20 @@ jobs:
               value: "pnpm changeset version"
 ```
 
-## Add mario into template
+This generator will add `ci:version` script into `package.json`.
 
-create `.neo` folder in template repo, `.neo` structure properly like this:
-
-```
-// TODO
-```
-
-Add `mario` package or local `generator` file in `.neo/.neorc` mario field.
-
-```json
-{
-  "mario": "@aiou/generator-aiou"
-}
-```
-
-If `mario` is npm package, neo will download it first. Otherwise, please makesure `geneartor` file included in template, and publish with it.
+If `mario` geneartor is npm package, neo will download it first. Otherwise, please makesure `geneartor` file included in template, and publish with it.
 
 After run mario successfully, neo will auto delete `.neo` foleder.
 
+## Run manually
+
+If template does not contain `.neo` folder, neo supports run `mario` generator standalone.
+
+```sh
+neo run @aiou/geneartor-demo
+```
+
 ## Build mario
 
-Checkout the [Mario API](/configuration/mario) for documentation about creating more complex generator.
+Checkout the [Mario API](/guide/mario-api) for documentation about creating more complex generator.

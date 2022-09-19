@@ -8,7 +8,7 @@
 
 `preset` is a normal npm package, you can publish preset package for share and download it from remote. Create you first preset with `neo create` in follow steps:
 
-```console
+```sh
 neo create @aiou/preset-demo my-preset-app
 ```
 
@@ -43,7 +43,7 @@ Now, you can publish it like normal npm package.
 
 ## Install preset
 
-```console
+```sh
 neo add <preset-package> --preset
 ```
 
@@ -53,4 +53,4 @@ neo will save templates listed in `<preset-package>` into local store. You can c
 
 ## Build preset
 
-Checkout [Preset API](/configration/preset) for documentation about creating preset package.
+Checkout [Preset API](/guide/preset-api) for documentation about creating preset package.

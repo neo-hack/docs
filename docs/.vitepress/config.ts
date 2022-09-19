@@ -28,6 +28,23 @@ export default defineConfig({
               text: 'Manage with preset',
               link: '/guide/manage-with-preset'
             },
+            {
+              text: 'Run mario',
+              link: '/guide/run-mario'
+            },
+          ],
+        },
+        {
+          text: 'APIs',
+          items: [
+            {
+              text: 'Mario API',
+              link: '/guide/mario-api'
+            },
+            {
+              text: 'Preset API',
+              link: '/guide/preset-api'
+            },
           ],
         },
       ],
