@@ -4,7 +4,7 @@ layout: home
 hero:
   name: NEO
   text: Local & Fast starter template manager.
-  tagline: Use pnpm to manage your template, create hack project as quick as possible.
+  tagline: Local based template manager, create hack project as quick as possible.
   image:
     src: /logo.png
     alt: NEO
@@ -19,7 +19,7 @@ hero:
 features:
   - icon: ⚡️
     title: Hack Fast
-    details: Cache template repo, create hack project as quick as possible.
+    details: Local based template manager, create hack project as quick as possible.
   - icon: 🤖
     title: Easy Manipulate system
     details: Define rich manipulate system with yaml file.

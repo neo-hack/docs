@@ -17,7 +17,7 @@ After everything is done, neo will automatically remove `.neo` from your side pr
 
 - Type `string`
 
-Run manipulate geneartor after neo create side project.
+Run mario geneartor after neo create side project.
 
 - If mario is valid npm package, neo will load first.
 - If mario is local filepath, neo will read mario geneartor definition from it.

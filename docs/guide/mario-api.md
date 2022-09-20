@@ -1,8 +1,6 @@
 # Mario API
 
-`mario`, or another name `generator`. 
-
-Mario is simple manipulate system based on `gulp`, has similar syntax like `github workflow`. You can write and publish a mario package once, and have it work after neo create side project from local or remote.
+Mario is simple manipulate system based on `gulp`, has similar syntax like `github workflow`. 
 
 ## Create a generator
 
@@ -26,7 +24,7 @@ Feel free to add more steps after `Add CI Scripts`, or more jobs `Setup Pkg`. `m
 
 ## Built in Actions
 
-`mario` built in some common actions. Action receive params from property `with`. 
+`mario` built in some useful actions. Action receive params from property `with`. 
 
 ### Action - json-editor
 
@@ -98,7 +96,7 @@ jobs:
 
 ### Action - replace
 
-Replace `match` value.
+Replace `match` with `replacement`.
 
 Options:
 
@@ -134,8 +132,9 @@ jobs:
       - name: Replace Action
       - uses: replace
         with:
-          match: one
-          replacement: target
+          pairs:
+            - match: one
+              replacement: target
 ```
 
 ### `clean`
@@ -166,7 +165,7 @@ Exec shell command defined in `steps.run`.
 
 #### `quiet`
 
-Sient all message display during command.
+Sient all message display during exec command.
 
 Example:
 
@@ -187,7 +186,7 @@ Job and step receive some common options.
 
 #### `job.paths`
 
-- Type: `string|undefined` glob pattern is supported, e.g. `assets.ts`
+- Type: `string|undefined` glob pattern is supported, e.g. `templates/**`
 
 By default, will be all files under `process.cwd()`, auto ignore `node_modules`. If job specific `paths` but not match any files, will skip job.
 
@@ -199,7 +198,11 @@ By default, will exit if any error happen.
 
 ### Variables
 
-neo support access variable with `${{ variable }}`. Under neo context, mario generator will receive global variables, useful to replace package basic info.
+neo support access variable with `${{ variable }}`. 
+
+#### Default variable
+
+Under neo context, mario generator will receive some global variables, useful to replace package basic info.
 
 Example:
 
@@ -226,4 +229,4 @@ jobs:
 
 ## Used as a libary
 
-Currently it already published as a npm package. Checkout [@aiou/mario](https://github.com/neo-hack/neo/tree/master/packages/mario) for documentation about using like it as a standalone libary
+Currently it already published as a npm package. Checkout [@aiou/mario](https://github.com/neo-hack/neo/tree/master/packages/mario) for documentation about using it as a libary.

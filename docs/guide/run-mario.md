@@ -6,11 +6,13 @@
 
 `mario`, or in other words `generator`. 
 
-Mario is simple manipulate system based on `gulp`, `mario` has similar syntax like `github workflow`.
+Mario is simple manipulate system based on `gulp`, `mario` has similar syntax like `github workflow`. 
 
 Sometimes, after create new side project from `npm` or `git` template, you may also need to apply some modifies, e.g. change package name, update origin git url etc...
 
 With `mario`, it will make these work much easier. Pack common modify actions into a `mario` geneartor, `mario` will repeat those actions. 
+
+You can write and publish a mario package once, and have it work after neo create side project from local or remote.
 
 ## Add mario into template
 
@@ -47,9 +49,9 @@ jobs:
 
 This generator will add `ci:version` script into `package.json`.
 
-If `mario` geneartor is npm package, neo will download it first. Otherwise, please makesure `geneartor` file included in template, and publish with it.
+If `mario` geneartor is npm package, neo will download it first. Otherwise, please makesure `geneartor` file included in template.
 
-After run mario successfully, neo will auto delete `.neo` foleder.
+After run `mario` successfully, `neo` will auto delete `.neo` foleder.
 
 ## Run manually
 

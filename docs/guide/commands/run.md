@@ -1,6 +1,6 @@
 # run
 
-Command run used to run mario generator. Before you use `neo`, recommanded go through [Run Mario](/guide/run-mario) first.
+Command run used to run mario generator. Before you use `neo run`, recommanded go through [Run Mario](/guide/run-mario) first.
 
 ## TL;DR
 

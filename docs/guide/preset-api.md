@@ -1,10 +1,10 @@
 # Preset API
 
-presets define collection of templates and configs.
+`preset` is collection of config files and templates. It cound help you batch add list of templates into your local store.
 
 ## Create a preset
 
-`preset` is a normal npm package, you can publish preset package for share and download it from remote. Create you first preset with `neo create` in follow steps:
+`preset` is just a normal npm package, you can publish preset package for share and download it from remote. Create you first preset with command `create` in follow steps:
 
 Use `@aiou/preset-demo` as template:
 

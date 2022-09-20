@@ -16,7 +16,7 @@ $ pnpm install @aiou/neo -g
 
 ## Create a side project
 
-Download remote `npm/git` repo into local store, and create new side project instantly.
+Download remote `npm/git` template into local store, and create new side project instantly.
 
 ```sh
 $ neo create @aiou/react-template my-app
@@ -33,12 +33,12 @@ code .
 
 
 :::info
-`@aiou/react-template` is already cache in local store. At next time, neo prefer use local cached to create another side project.
+`@aiou/react-template` is already cache in local store. At next time, neo prefer use local cached to create another side project. If any cached templates found in local, `neo create` will display all variable templates.
 :::
 
 ## Save starter template
 
-You can also add remote starter template, create new side project later
+You can use commnd `add` cache remote starter template, then create new side project later.
 
 ```sh
 $ neo add @aiou/react-template
