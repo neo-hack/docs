@@ -1,8 +1,20 @@
 import { defineConfig } from 'vitepress'
 
+const ogDescription = 'Local & Fast starter template manager'
+
 export default defineConfig({
   title: 'NEO',
-  description: 'Manage your templates like a pro',
+  description: ogDescription,
+  head: [
+    ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:title', content: 'NEO' }],
+    ['meta', { property: 'og:image', content: '/banner.png' }],
+    ['meta', { property: 'og:url', content: 'http://neo-hack.com' }],
+    ['meta', { property: 'og:description', content: ogDescription }],
+    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+    ['meta', { name: 'theme-color', content: '#00F900' }]
+  ],
   themeConfig: {
     nav: [
       {
