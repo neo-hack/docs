@@ -33,3 +33,18 @@ By default, neo use cached template to create project. Force neo always use late
 ### `--preset`
 
 neo will display all available template list from local store. Filter templates by preset name e.g. `neo create --preset=neo`
+
+### `--mono`
+
+create side project inside monorepo, will automatically delete files
+
+:::info
+Those files will be automatically deleted:
+
+- `.eslintignore`
+- `.eslintrc` 
+- `.eslintrc.js`
+- `.changeset`
+- `.github`
+- `.husky`
+:::
