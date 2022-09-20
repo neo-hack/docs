@@ -6,7 +6,7 @@ hero:
   text: Local & Fast starter template manager.
   tagline: Use pnpm to manage your template, create hack project as quick as possible.
   image:
-    src: /assets/logo.png
+    src: /logo.png
     alt: NEO
   actions:
     - theme: brand
