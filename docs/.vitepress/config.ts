@@ -10,7 +10,7 @@ export default defineConfig({
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:title', content: 'NEO' }],
     ['meta', { property: 'og:image', content: '/banner.png' }],
-    ['meta', { property: 'og:url', content: 'http://neo-hack.com' }],
+    ['meta', { property: 'og:url', content: 'https://neo-docs.netlify.app/' }],
     ['meta', { property: 'og:description', content: ogDescription }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'theme-color', content: '#00F900' }]
