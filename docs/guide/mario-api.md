@@ -22,6 +22,32 @@ jobs:
 
 Feel free to add more steps after `Add CI Scripts`, or more jobs `Setup Pkg`. `mario` will run jobs and steps sequential.
 
+You can also publish it as a npm package, create you first preset with command `create` in follow steps: 
+
+Use `@aiou/mario-template` as template:
+
+```sh
+neo create @aiou/mario-template my-mario-app
+```
+
+A empty preset project structure is probably like this:
+
+```sh
+.
+├── CHANGELOG.md
+├── README.md
+├── index.yaml
+└── package.json
+```
+
+If mario run with `neo`, neo will try to resolve generator definition from main field, please make sure setup `index.yaml` at `package.json` main field:
+
+```json
+{
+  "main": "index.yaml"
+}
+```
+
 ## Built in Actions
 
 `mario` built in some useful actions. Action receive params from property `with`. 
