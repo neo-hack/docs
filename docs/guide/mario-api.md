@@ -4,7 +4,7 @@ Mario is simple manipulate system based on `gulp`, has similar syntax like `gith
 
 ## Create a generator
 
-Create a empty `generator.yaml` file, add follow codes. This generator will add `ci:version` script into `package.json`.
+Create a empty `generator.yaml` file, add the following codes. This generator will add `ci:version` script into `package.json`.
 
 ```yaml
 jobs:
@@ -227,6 +227,6 @@ jobs:
 
 - Type: `string` side project name
 
-## Used as a libary
+## Used as a library
 
-Currently it already published as a npm package. Checkout [@aiou/mario](https://github.com/neo-hack/neo/tree/master/packages/mario) for documentation about using it as a libary.
+Currently it already published as a npm package. Checkout [@aiou/mario](https://github.com/neo-hack/neo/tree/master/packages/mario) for documentation about using it as a library.
