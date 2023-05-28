@@ -61,6 +61,10 @@ If template does not contain `.neo` folder, neo supports run `mario` generator s
 neo run @aiou/geneartor-aiou
 ```
 
+:::tip
+You can run with specific version `@aiou/geneartor-aiou@version` <sup>v3.6.0</sup>
+:::
+
 Or, with local generator file.
 
 ```sh
