@@ -62,7 +62,7 @@ neo run @aiou/geneartor-aiou
 ```
 
 :::tip
-You can run with specific version `@aiou/geneartor-aiou@version`
+You can run with specific version `@aiou/geneartor-aiou@version` <sup>v3.6.0</sup>
 :::
 
 Or, with local generator file.
